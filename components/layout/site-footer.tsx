@@ -1,32 +1,49 @@
-import { footerLinks } from "@/config/landing";
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import * as React from "react";
+
+import { footerLinks } from "@/config/landing";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className="w-full py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <Link href="/" className="flex justify-center ">
-            <Image src="/_static/logo.png" className="w-28" width={200} height={150} alt="Mesprit AI" />
+        <div className="mx-auto max-w-3xl">
+          <Link href="/" className="flex justify-center">
+            <Image
+              src="/_static/logo.png"
+              className="w-28 dark:hidden"
+              width={200}
+              height={150}
+              alt="Flowbite Logo"
+            />
+            <Image
+              src="/_static/logo-light.png"
+              className="hidden w-28 dark:block"
+              width={200}
+              height={150}
+              alt="Flowbite Logo"
+            />
           </Link>
-          <ul className="text-base flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-12 mb-10 border-b border-gray-200">
-            {footerLinks.map((footer) => (
-              <li>
-                <Link href={footer.link} className="text-muted-foreground hover:text-gray-900">
+          <ul className="mb-10 flex flex-col items-center justify-center gap-7 border-b py-12 text-base transition-all duration-500 md:flex-row md:gap-12">
+            {footerLinks.map((footer, index) => (
+              <li key={index}>
+                <Link
+                  href={footer.link}
+                  className="text-muted-foreground hover:text-gray-900 dark:text-white"
+                >
                   {footer.title}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="flex space-x-10 justify-center items-center mb-14">
+          <div className="mb-14 flex items-center justify-center space-x-10">
             <a
               href="#"
-              className="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
             >
               <svg
-                className="w-[1.688rem] h-[1.688rem]"
+                className="size-6 dark:text-white"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="none"
@@ -39,10 +56,10 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             <a
               href="#"
-              className="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
             >
               <svg
-                className="w-[1.688rem] h-[1.688rem] "
+                className="size-6 dark:text-white"
                 viewBox="0 0 29 29"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,10 +72,10 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             <a
               href="#"
-              className="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
             >
               <svg
-                className="w-[0.938rem] h-[1.625rem]"
+                className="size-6 dark:text-white"
                 viewBox="0 0 15 26"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,10 +88,10 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             <a
               href="#"
-              className="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 "
+              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
             >
               <svg
-                className="w-[1.875rem] h-[1.375rem]"
+                className="size-6 dark:text-white"
                 viewBox="0 0 30 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,12 +105,12 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               </svg>
             </a>
           </div>
-          <span className="text-lg text-gray-500 text-center block">
-            &copy;<a href="https://pagedone.io/">Mesprit</a> 2024, All rights reserved.
+          <span className="block text-center text-lg text-gray-500 dark:text-white">
+            &copy;<a href="https://pagedone.io/">Mesprit</a> 2024, All rights
+            reserved.
           </span>
         </div>
       </div>
     </footer>
-
   );
 }
