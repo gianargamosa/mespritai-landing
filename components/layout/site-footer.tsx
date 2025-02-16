@@ -8,7 +8,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className="w-full py-14">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-7xl">
           <Link href="/" className="flex justify-center">
             <Image
               src="/_static/logo.png"
@@ -105,7 +105,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               </svg>
             </a>
           </div>
-          <span className="block text-center text-lg text-gray-500 dark:text-white">
+          <span className="block text-center text-muted-foreground dark:text-white">
             &copy;<a href="https://pagedone.io/">Mesprit</a> 2024, All rights
             reserved.
           </span>

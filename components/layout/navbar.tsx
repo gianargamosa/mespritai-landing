@@ -11,7 +11,7 @@ import { buttonVariants } from "../ui/button";
 
 export function NavBar() {
   return (
-    <nav className="start-0 top-0 z-20 w-full border-b bg-white dark:bg-transparent">
+    <nav className="start-0 top-0 z-20 w-full border-b dark:bg-transparent">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between p-4">
         <Link
           href="/"

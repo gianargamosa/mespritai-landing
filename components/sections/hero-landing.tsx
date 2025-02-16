@@ -40,7 +40,7 @@ export default async function HeroLanding() {
         </h1>
 
         <p
-          className="max-w-xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
+          className="max-w-xl text-balance leading-normal text-muted-foreground dark:text-white sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
         >
           Use AI to organize unstructured text and documents. Extract key terms
