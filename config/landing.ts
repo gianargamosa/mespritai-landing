@@ -1,4 +1,30 @@
 import { FeatureLdg, InfoLdg, TestimonialType } from "types";
+import { env } from "@/env.mjs";
+
+export const appLink = env.NEXT_PUBLIC_MESPIRT_APP_URL;
+
+export const footerLinks = [
+  {
+    title: "Mesprit",
+    link: "/",
+  },
+  {
+    title: "Products",
+    link: "/products",
+  },
+  {
+    title: "Resources",
+    link: "/resources",
+  },
+  {
+    title: "Blogs",
+    link: "/blog",
+  },
+  {
+    title: "Support",
+    link: "/support",
+  },
+];
 
 export const infos: InfoLdg[] = [
   {
