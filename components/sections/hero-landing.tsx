@@ -34,8 +34,8 @@ export default async function HeroLanding() {
           target="_blank"
         >
           <span className="mr-3">🎉</span>
-          <span className="hidden md:flex">Introducing&nbsp;</span> Next Auth
-          Roles Template on <Icons.twitter className="ml-2 size-3.5" />
+          <span className="hidden md:flex">Introducing&nbsp;</span> Mesprit AI
+          Beta.
         </Link>
 
         <h1 className="text-balance font-sans text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-[66px]">
