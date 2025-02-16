@@ -16,7 +16,7 @@ export default function PreviewLanding() {
             <div className="rounded-xl md:bg-muted/30">
               <div className="relative aspect-video overflow-hidden">
                 <Image
-                  className="object-start size-full dark:opacity-85 dark:invert"
+                  className="object-start size-full border border-t-0 dark:opacity-85 dark:invert"
                   src="/_static/landing/product-screenshot.png"
                   alt="preview landing"
                   width={1500}
