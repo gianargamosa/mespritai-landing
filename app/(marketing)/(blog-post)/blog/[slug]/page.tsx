@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
 import { allPosts } from "contentlayer/generated";
+import { notFound } from "next/navigation";
 
 import { Mdx } from "@/components/content/mdx-components";
 
@@ -8,6 +8,11 @@ import "@/styles/mdx.css";
 import { Metadata } from "next";
 import Link from "next/link";
 
+import Author from "@/components/content/author";
+import BlurImage from "@/components/shared/blur-image";
+import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import { DashboardTableOfContents } from "@/components/shared/toc";
+import { buttonVariants } from "@/components/ui/button";
 import { BLOG_CATEGORIES } from "@/config/blog";
 import { getTableOfContents } from "@/lib/toc";
 import {
@@ -17,11 +22,6 @@ import {
   getBlurDataURL,
   placeholderBlurhash,
 } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import Author from "@/components/content/author";
-import BlurImage from "@/components/shared/blur-image";
-import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
-import { DashboardTableOfContents } from "@/components/shared/toc";
 
 export async function generateStaticParams() {
   return allPosts.map((post) => ({
@@ -42,7 +42,7 @@ export async function generateMetadata({
   const { title, description, image } = post;
 
   return constructMetadata({
-    title: `${title} – SaaS Starter`,
+    title: `${title} – Mesprit`,
     description: description,
     image,
   });

@@ -12,7 +12,7 @@ export default function PreviewLanding() {
               className="size-full object-cover object-center dark:opacity-85 dark:invert"
               src="/_static/landing/product-screenshot.png"
               alt="preview landing"
-              width={2000}
+              width={1500}
               height={1000}
               priority={true}
             />

@@ -6,22 +6,6 @@ import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
 
 export default async function HeroLanding() {
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/mickasmt/next-saas-stripe-starter",
-    {
-      ...(env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-      // data will revalidate every hour
-      next: { revalidate: 3600 },
-    },
-  )
-    .then((res) => res.json())
-    .catch((e) => console.log(e));
-
   return (
     <section className="space-y-6 py-12 sm:py-20 lg:py-20">
       <div className="container flex max-w-6xl flex-col items-center gap-5 text-center">
@@ -41,7 +25,7 @@ export default async function HeroLanding() {
           href="https://twitter.com/miickasmt/status/1810465801649938857"
           className={cn(
             buttonVariants({ variant: "outline", size: "sm", rounded: "full" }),
-            "px-4",
+            "px-4 text-muted-foreground",
           )}
           target="_blank"
         >
@@ -50,7 +34,7 @@ export default async function HeroLanding() {
           <span className="font-bold">Mesprit AI Beta.</span>
         </Link>
 
-        <h1 className="hero-landing-tagline text-balance text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-[70px]">
+        <h1 className="hero-landing-tagline text-balance font-sans text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-[70px]">
           Automated Data Extraction for{" "}
           <span className="text-gradient_indigo-purple">Documents</span>
         </h1>
