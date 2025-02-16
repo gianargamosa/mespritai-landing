@@ -4,7 +4,7 @@ import MaxWidthWrapper from "../shared/max-width-wrapper";
 
 export default function HowItWorks() {
   return (
-    <section className="mt-20 py-24">
+    <section className="mt-56 py-24">
       <MaxWidthWrapper>
         <div className="mb-10 flex flex-col items-center text-center">
           <div className="text-gradient_indigo-purple mb-4 font-semibold">
