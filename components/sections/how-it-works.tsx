@@ -21,7 +21,7 @@ export default function HowItWorks() {
         </div>
         <div className="mx-auto grid max-w-lg auto-cols-max grid-cols-1 gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-full lg:grid-cols-4">
           <div className="relative h-auto w-full md:col-span-2">
-            <div className="flex flex-row flex-wrap justify-between rounded-2xl bg-gray-800">
+            <div className="flex flex-row flex-wrap justify-between rounded-lg bg-gray-800 shadow-sm">
               <div className="mb-12 w-full p-5 md:w-1/2 xl:p-8">
                 <div className="block">
                   <Timer className="size-10 text-white" strokeWidth={1.2} />
@@ -45,7 +45,7 @@ export default function HowItWorks() {
             </div>
           </div>
           <div className="relative h-auto w-full">
-            <div className="h-full rounded-2xl bg-indigo-500 p-5 xl:p-8">
+            <div className="h-full rounded-lg bg-indigo-500 p-5 shadow-sm xl:p-8">
               <div className="block">
                 <DatabaseZap className="size-10 text-white" strokeWidth={1.2} />
               </div>
@@ -63,7 +63,7 @@ export default function HowItWorks() {
             </div>
           </div>
           <div className="relative h-auto w-full">
-            <div className="h-full rounded-2xl bg-violet-500 p-5 xl:p-8">
+            <div className="h-full rounded-lg bg-violet-500 p-5 shadow-sm xl:p-8">
               <div className="block">
                 <ChartPie className="size-10 text-white" strokeWidth={1.2} />
               </div>
