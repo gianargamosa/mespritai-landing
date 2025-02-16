@@ -3,6 +3,46 @@ import { env } from "@/env.mjs";
 
 export const appLink = env.NEXT_PUBLIC_MESPIRT_APP_URL;
 
+export const faqs = [
+  {
+    title: "What is Automated Data Extraction for Documents?",
+    description:
+      "Automated Data Extraction uses AI and advanced LLMs to instantly identify, extract, and organize key information from documents, eliminating manual data entry and improving efficiency.",
+  },
+  {
+    title: "How much does it cost?",
+    description:
+      "Pricing depends on usage, document volume, and integration needs. We offer flexible plans, including pay-as-you-go and enterprise solutions. Contact us for a custom quote!",
+  },
+  {
+    title: "Who is it for?",
+    description:
+      "Our solution is designed for professionals and teams handling large volumes of documents, including:",
+    list: [
+      "Finance Teams – Automate invoice processing, expense tracking, and compliance reporting.",
+      "Legal Professionals – Extract clauses, case details, and contracts quickly and accurately.",
+      "Research Teams & Scientists – Speed up data collection from research papers, clinical studies, and reports.",
+      "Enterprises & Businesses – Streamline document-heavy workflows in HR, procurement, and operations.",
+      "Healthcare Organizations – Digitize and extract key data from patient records, insurance claims, and medical research.",
+      "Government Agencies – Process official records, legal documents, and regulatory reports with speed and accuracy.",
+    ],
+  },
+  {
+    title: "What problems does it solve?",
+    list: [
+      "Saves Time – Eliminates tedious manual data entry, reducing processing time.",
+      "Improves Accuracy – AI minimizes human errors in data extraction.",
+      "Organizes Data Efficiently – Converts unstructured documents into structured, searchable formats.",
+      "Seamless Integration – Works with your existing ERP, CRM, and databases for smooth workflows.",
+    ],
+  },
+  {
+    title: "How do I get started?",
+    description:
+      "Simply upload your documents, and our AI will do the rest! Contact us for a demo or sign up to see it in action.",
+  },
+];
+
 export const footerLinks = [
   {
     title: "Mesprit",

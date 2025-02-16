@@ -31,7 +31,9 @@ export default async function HeroLanding() {
         >
           <span className="mr-3">🎉</span>
           <span className="hidden md:flex">Introducing&nbsp;</span>{" "}
-          <span className="font-bold">Mesprit AI Beta.</span>
+          <span className="text-gradient_indigo-purple font-bold">
+            Mesprit AI Beta.
+          </span>
         </Link>
 
         <h1 className="hero-landing-tagline text-balance font-sans text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-[70px]">
