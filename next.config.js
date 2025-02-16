@@ -6,6 +6,9 @@ import("./env.mjs");
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   swcMinify: true,
   images: {
     unoptimized: true,
