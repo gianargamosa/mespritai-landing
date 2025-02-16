@@ -29,7 +29,7 @@ export default async function HeroLanding() {
           href="https://twitter.com/miickasmt/status/1810465801649938857"
           className={cn(
             buttonVariants({ variant: "outline", size: "sm", rounded: "full" }),
-            "px-4",
+            "px-4 text-muted-foreground",
           )}
           target="_blank"
         >
@@ -38,10 +38,10 @@ export default async function HeroLanding() {
           Beta.
         </Link>
 
-        <h1 className="text-balance font-sans text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-[66px]">
+        <h1 className="text-balance font-sans text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-[66px]">
           Automated Data Extraction for
           {" "}
-          <span className="text-gradient_indigo-purple font-semibold">
+          <span className="text-gradient_indigo-purple font-extrabold">
             Documents
           </span>
         </h1>

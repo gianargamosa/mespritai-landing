@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
 import { allPages } from "contentlayer/generated";
+import { notFound } from "next/navigation";
 
 import { Mdx } from "@/components/content/mdx-components";
 
@@ -28,7 +28,7 @@ export async function generateMetadata({
   const { title, description } = page;
 
   return constructMetadata({
-    title: `${title} – SaaS Starter`,
+    title: `${title} – Mesprit`,
     description: description,
   });
 }
