@@ -7,6 +7,7 @@ import { appLink } from "@/config/landing";
 import { cn } from "@/lib/utils";
 
 import { Icons } from "../shared/icons";
+import NiceMenu from "../shared/menu";
 import { buttonVariants } from "../ui/button";
 
 export function NavBar() {
@@ -79,7 +80,8 @@ export function NavBar() {
           className="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
           id="navbar-sticky"
         >
-          <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 p-1 font-medium text-muted-foreground dark:text-white md:mt-0 md:flex-row md:space-x-8 md:border-0 rtl:space-x-reverse">
+          <NiceMenu />
+          {/* <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 p-1 font-medium text-muted-foreground dark:text-white md:mt-0 md:flex-row md:space-x-8 md:border-0 rtl:space-x-reverse">
             <li>
               <a
                 href="#"
@@ -109,7 +111,7 @@ export function NavBar() {
                 Pricing
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </nav>
