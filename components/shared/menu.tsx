@@ -2,30 +2,17 @@ import React, { useState } from "react";
 import { Hashicon } from "@emeraldpay/hashicon-react";
 import { motion } from "framer-motion";
 
-const Underline = () => (
-  <motion.div
-    className="absolute -bottom-1 left-0 right-0 h-1 bg-gradient-to-r from-blue-700 via-pink-500 to-red-500"
-    layoutId="underline"
-    layout
-  ></motion.div>
-);
-
 const NiceMenu = () => {
   return (
     <motion.div className="mt-4 flex flex-col rounded-lg border border-gray-100 p-1 font-medium text-muted-foreground dark:text-white md:mt-0 md:flex-row md:space-x-8 md:border-0 rtl:space-x-reverse">
       <MenuItem text={"Products"} style={{ minWidth: 400 }}>
-        <SubItem title="Ecommerce" text="Unify online and in-person payments" />
         <SubItem
-          title="Marketplaces"
-          text="Pay out globally and facilitate multiparty payments"
+          title="Skylark"
+          text="Transform documents into structured data."
         />
         <SubItem
-          title="Platforms"
-          text="Let customers accept payments within your platform"
-        />
-        <SubItem
-          title="Creator Economy"
-          text="Facilitate on-platform payments and pay creators globally"
+          title="Pocono"
+          text="workflow-based central contract database."
         />
       </MenuItem>
       <MenuItem text={"Use cases"} style={{ minWidth: 400 }}>
@@ -90,10 +77,7 @@ const MenuItem = ({ text, children, ...props }) => {
       onHoverStart={() => setIsBeingHovered(true)}
       onHoverEnd={() => setIsBeingHovered(false)}
     >
-      <span className="text-balance text-base hover:underline">
-        {text}
-        {/* {isBeingHovered && <Underline />} */}
-      </span>
+      <span className="text-balance text-base hover:underline">{text}</span>
       {isBeingHovered && (
         <div className="min-w-max">
           <motion.div
