@@ -58,7 +58,7 @@ export default async function HeroLanding() {
             href="/pricing"
             prefetch={true}
             className={cn(
-              buttonVariants({ size: "lg", rounded: "full" }),
+              buttonVariants({ size: "lg", rounded: "lg" }),
               "gap-2",
             )}
           >

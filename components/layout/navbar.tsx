@@ -39,7 +39,7 @@ export function NavBar() {
               buttonVariants({
                 variant: "default",
                 size: "sm",
-                rounded: "full",
+                rounded: "lg",
               }),
               `hidden gap-2 px-5 md:flex`,
             )}

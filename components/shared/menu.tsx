@@ -12,7 +12,7 @@ const NiceMenu = () => {
         />
         <SubItem
           title="Pocono"
-          text="workflow-based central contract database."
+          text="Workflow-based central contract database."
         />
       </MenuItem>
       <MenuItem text={"Use cases"} style={{ minWidth: 400 }}>
@@ -50,9 +50,8 @@ const NiceMenu = () => {
       </MenuItem>
       <MenuItem text={"About us"} style={{ minWidth: 400 }}>
         <SubItem title="The Team" text="Get to know us better" />
-        <SubItem title="The Company" text="Since 1998" />
-        <SubItem title="Our Mission" text="Increase the GDP of the internet" />
-        <SubItem title="Investors" text="who's backing us" />
+        <SubItem title="The Company" text="Since 2024" />
+        <SubItem title="Careers" text="Explore opportunity with Mesprit" />
       </MenuItem>
     </motion.div>
   );
@@ -118,7 +117,7 @@ const SubItem = ({ title, text }) => {
       <div className="flex items-center gap-4 space-y-4">
         <Hashicon value={title} size={25} />
         <div className="">
-          <p className="text-base font-semibold text-white group-hover:text-blue-900">
+          <p className="text-base font-semibold text-black group-hover:text-blue-900 dark:text-white">
             {title}
           </p>
           <span className="text-sm text-gray-400 group-hover:text-blue-400">
