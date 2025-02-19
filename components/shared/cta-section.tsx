@@ -1,4 +1,7 @@
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+
+import { env } from "@/env.mjs";
 
 import MaxWidthWrapper from "./max-width-wrapper";
 
@@ -37,18 +40,18 @@ export default function CtaSection() {
               today!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <a
-                href="#"
+              <Link
+                href={env.NEXT_PUBLIC_MESPIRT_APP_URL || ""}
                 className="rounded-md border bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Get started
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/blog"
                 className="flex items-center gap-2 text-sm/6 font-semibold text-black dark:text-white"
               >
                 Learn more <ArrowRight className="size-4" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="relative mt-[100px] h-80">
