@@ -27,12 +27,14 @@ export default function CtaSection() {
             </defs>
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-            <h2 className="text-balance font-heading text-3xl text-black dark:text-white sm:text-4xl md:text-4xl lg:text-[40px]">
-              Boost your productivity. Start using our app today.
+            <h2 className="text-balance font-heading text-3xl leading-6 text-black dark:text-white sm:text-4xl md:text-4xl lg:text-[40px]">
+              Optimize Your Business with Smart Document Analysis!
             </h2>
             <p className="mt-6 text-pretty text-lg/8 text-muted-foreground">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla.
+              Don’t let valuable insights go unnoticed. Enhance decision-making,
+              improve compliance, and boost efficiency with effective document
+              analysis. Take the next step toward smarter business operations
+              today!
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
@@ -49,7 +51,7 @@ export default function CtaSection() {
               </a>
             </div>
           </div>
-          <div className="relative mt-16 h-80 lg:mt-8">
+          <div className="relative mt-[100px] h-80">
             <img
               alt="App screenshot"
               src="https://tailwindui.com/plus-assets/img/component-images/dark-project-app-screenshot.png"

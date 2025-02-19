@@ -68,25 +68,33 @@ export const footerLinks = [
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
+    title: "Unlock Insights, Drive Success.",
     description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
+      "Effective document analysis is the key to smarter business decisions, streamlined operations, and risk management. By analyzing documents, companies can enhance compliance, boost efficiency, and preserve valuable knowledge—ensuring long-term success in a data-driven world.",
     image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
-        icon: "laptop",
-      },
-      {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
-        icon: "settings",
-      },
-      {
-        title: "Scalable",
+        title: "Improves Decision-Making",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+          "Analyzing documents ensures that business decisions are based on accurate, well-organized information rather than assumptions.",
+        icon: "lightbulb",
+      },
+      {
+        title: "Boosts Operational Efficiency",
+        description:
+          "Reviewing and analyzing documents helps streamline workflows, reduce redundancies, and improve overall productivity.",
+        icon: "boost",
+      },
+      {
+        title: "Enhances Compliance and Risk Management",
+        description:
+          "Proper document analysis helps companies stay compliant with industry regulations and identify potential risks before they escalate.",
+        icon: "cloudAlert",
+      },
+      {
+        title: "Supports Knowledge Management",
+        description:
+          "Document analysis allows companies to retain valuable insights, ensuring that critical information is accessible for future reference and business continuity.",
         icon: "search",
       },
     ],

@@ -1,4 +1,5 @@
 import {
+  AlertOctagon,
   AlertTriangle,
   ArrowRight,
   ArrowUpRight,
@@ -6,6 +7,7 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
+  CloudLightning,
   Copy,
   CreditCard,
   File,
@@ -15,6 +17,7 @@ import {
   Image,
   Laptop,
   LayoutPanelLeft,
+  Lightbulb,
   LineChart,
   Loader2,
   LucideIcon,
@@ -36,6 +39,9 @@ import {
 export type Icon = LucideIcon;
 
 export const Icons = {
+  boost: CloudLightning,
+  lightbulb: Lightbulb,
+  cloudAlert: AlertOctagon,
   add: Plus,
   arrowRight: ArrowRight,
   arrowUpRight: ArrowUpRight,
