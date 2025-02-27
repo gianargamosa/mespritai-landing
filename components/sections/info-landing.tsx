@@ -56,7 +56,14 @@ export default function InfoLanding({
               alt="Welcome Files"
               width={1000}
               height={1000}
-              className="mx-auto"
+              className="mx-auto block w-full dark:hidden"
+            />
+            <Image
+              src="/_static/illustrations/files-light.svg"
+              alt="Welcome Files"
+              width={1000}
+              height={1000}
+              className="mx-auto hidden w-full dark:block"
             />
           </div>
         </div>

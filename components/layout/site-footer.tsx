@@ -106,8 +106,8 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
           </div>
           <span className="block text-center text-muted-foreground dark:text-white">
-            &copy;<a href="https://pagedone.io/">Mesprit</a> 2024, All rights
-            reserved.
+            &copy;<a href="https://pagedone.io/">Mesprit</a> 2024 made in PH,
+            All rights reserved.
           </span>
         </div>
       </div>

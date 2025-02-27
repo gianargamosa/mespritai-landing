@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -55,12 +56,12 @@ export default function CtaSection() {
             </div>
           </div>
           <div className="relative mt-[100px] h-80">
-            <img
-              alt="App screenshot"
-              src="https://tailwindui.com/plus-assets/img/component-images/dark-project-app-screenshot.png"
+            <Image
+              alt="Product screenshot"
+              src="/_static/landing/product-screenshot.png"
               width={1824}
               height={1080}
-              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md border bg-white/5 shadow-sm ring-1 ring-white/10"
             />
           </div>
         </div>

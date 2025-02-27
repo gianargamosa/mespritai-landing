@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { Hashicon } from "@emeraldpay/hashicon-react";
 import { motion } from "framer-motion";
 
@@ -9,49 +10,74 @@ const NiceMenu = () => {
         <SubItem
           title="Skylark"
           text="Transform documents into structured data."
+          href="/products/skylark"
         />
         <SubItem
-          title="Pocono"
+          title="Pocono (coming soon)"
           text="Workflow-based central contract database."
+          href="/"
         />
       </MenuItem>
       <MenuItem text={"Use cases"} style={{ minWidth: 400 }}>
         <SubItem
           title="Legal Professionals"
           text="Extract clauses, contracts, and case details."
+          href="/products/skylark"
         />
         <SubItem
           title="Finance Teams"
           text="Automate invoices, expenses, and compliance."
+          href="/use-cases/ai-powered-document-analysis-transforming-finance-teams"
         />
         <SubItem
           title="Research Teams & Scientists"
           text="Speed up data collection from studies."
+          href="/products/skylark"
         />
         <SubItem
           title="Healthcare Organizations"
           text="Digitize records, claims, and reports."
+          href="/products/skylark"
         />
         <SubItem
           title="Government Agencies"
           text="Process official documents efficiently."
+          href="/products/skylark"
         />
         <SubItem
           title="Enterprises & Businesses"
           text="Streamline HR and operations workflows."
+          href="/products/skylark"
         />
       </MenuItem>
       <MenuItem text={"Resources"} style={{ minWidth: 400 }}>
         <SubItem
           title="Blog"
           text="Read the latest articles and thought leadership"
+          href="/blog"
         />
-        <SubItem title="News" text="Get updated from our latest news" />
+        <SubItem
+          title="News"
+          text="Get updated from our latest news"
+          href="/blog/category/news"
+        />
       </MenuItem>
       <MenuItem text={"About us"} style={{ minWidth: 400 }}>
-        <SubItem title="The Team" text="Get to know us better" />
-        <SubItem title="The Company" text="Since 2024" />
-        <SubItem title="Careers" text="Explore opportunity with Mesprit" />
+        <SubItem
+          title="The Team"
+          text="Get to know us better"
+          href="/products/skylark"
+        />
+        <SubItem
+          title="The Company"
+          text="Since 2024"
+          href="/products/skylark"
+        />
+        <SubItem
+          title="Careers"
+          text="Explore opportunity with Mesprit"
+          href="/products/skylark"
+        />
       </MenuItem>
     </motion.div>
   );
@@ -107,7 +133,13 @@ const SubItemVariants = {
   },
 };
 
-const SubItem = ({ title, text }) => {
+interface SubItemProps {
+  title: string;
+  text: string;
+  href: string;
+}
+
+const SubItem = ({ title, text, href }: SubItemProps) => {
   return (
     <motion.div
       className="group my-2 min-w-max cursor-pointer"
@@ -116,14 +148,14 @@ const SubItem = ({ title, text }) => {
     >
       <div className="flex items-center gap-4 space-y-4">
         <Hashicon value={title} size={25} />
-        <div className="">
+        <Link href={href}>
           <p className="text-base font-semibold text-black group-hover:text-blue-900 dark:text-white">
             {title}
           </p>
           <span className="text-sm text-gray-400 group-hover:text-blue-400">
             {text}
           </span>
-        </div>
+        </Link>
       </div>
     </motion.div>
   );
