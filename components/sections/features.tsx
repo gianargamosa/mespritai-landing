@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-import { features } from "@/config/landing";
-import { Button } from "@/components/ui/button";
 import { HeaderSection } from "@/components/shared/header-section";
 import { Icons } from "@/components/shared/icons";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import { Button } from "@/components/ui/button";
+import { features } from "@/config/landing";
 
 export default function Features() {
   return (

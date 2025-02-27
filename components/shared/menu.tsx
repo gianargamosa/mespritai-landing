@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Link from "next/link";
 import { Hashicon } from "@emeraldpay/hashicon-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
 
 const NiceMenu = () => {
   return (
@@ -22,7 +22,7 @@ const NiceMenu = () => {
         <SubItem
           title="Legal Professionals"
           text="Extract clauses, contracts, and case details."
-          href="/products/skylark"
+          href="/use-cases/skylark"
         />
         <SubItem
           title="Finance Teams"
@@ -32,22 +32,22 @@ const NiceMenu = () => {
         <SubItem
           title="Research Teams & Scientists"
           text="Speed up data collection from studies."
-          href="/products/skylark"
+          href="/use-cases/skylark"
         />
         <SubItem
           title="Healthcare Organizations"
           text="Digitize records, claims, and reports."
-          href="/products/skylark"
+          href="/use-cases/skylark"
         />
         <SubItem
           title="Government Agencies"
           text="Process official documents efficiently."
-          href="/products/skylark"
+          href="/use-cases/skylark"
         />
         <SubItem
           title="Enterprises & Businesses"
           text="Streamline HR and operations workflows."
-          href="/products/skylark"
+          href="/use-cases/skylark"
         />
       </MenuItem>
       <MenuItem text={"Resources"} style={{ minWidth: 400 }}>
@@ -66,17 +66,17 @@ const NiceMenu = () => {
         <SubItem
           title="The Team"
           text="Get to know us better"
-          href="/products/skylark"
+          href="/about-us"
         />
         <SubItem
           title="The Company"
           text="Since 2024"
-          href="/products/skylark"
+          href="/about-us"
         />
         <SubItem
           title="Careers"
           text="Explore opportunity with Mesprit"
-          href="/products/skylark"
+          href="/about-us"
         />
       </MenuItem>
     </motion.div>

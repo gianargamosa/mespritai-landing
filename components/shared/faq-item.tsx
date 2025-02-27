@@ -1,5 +1,5 @@
+import { ChevronRight } from "lucide-react";
 import { useState } from "react";
-import { ChevronDown, ChevronRight } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -19,7 +19,7 @@ export default function FaqItem({ title, description, list }: FaqItemProps) {
     <div>
       <div
         onClick={toggleAccordion}
-        className="flex w-full items-center justify-between rounded-md border bg-muted/25 px-4 py-3 text-left font-medium text-muted-foreground transition-colors hover:bg-muted/50 focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75"
+        className={cn("flex w-full items-center justify-between rounded-md border bg-muted/25 px-4 py-3 text-left font-medium text-muted-foreground transition-colors hover:bg-muted/50 focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75", active && "border-b-0 rounded-b-none")}
       >
         {title}
         <ChevronRight
@@ -32,7 +32,7 @@ export default function FaqItem({ title, description, list }: FaqItemProps) {
       </div>
       <div
         className={cn(
-          active ? "block" : "hidden",
+          active ? "block border border-t-0 rounded-b-lg" : "hidden",
           "bg-muted/25 px-4 pb-4 pt-2 text-muted-foreground",
         )}
       >
@@ -41,6 +41,6 @@ export default function FaqItem({ title, description, list }: FaqItemProps) {
           {list?.map((item, index) => <li key={index}>{item}</li>)}
         </ul>
       </div>
-    </div>
+    </div >
   );
 }

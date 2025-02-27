@@ -1,5 +1,6 @@
 import { ChartPie, ChevronRight, DatabaseZap, Timer } from "lucide-react";
 
+import Link from "next/link";
 import MaxWidthWrapper from "../shared/max-width-wrapper";
 
 export default function HowItWorks() {
@@ -34,13 +35,13 @@ export default function HowItWorks() {
                   manual effort, enhance accuracy, and accelerate
                   decision-making with AI-driven efficiency.{" "}
                 </p>
-                <button className="flex items-center justify-between gap-2 rounded-full border border-solid border-gray-300 px-5 py-2 text-xs font-semibold text-white transition-all duration-500 hover:bg-white/5">
+                <Link href="/blog" className="flex items-center justify-between gap-2 rounded-full border border-solid border-gray-300 px-5 py-2 text-xs font-semibold text-white transition-all duration-500 hover:bg-white/5">
                   View More
                   <ChevronRight
                     className="size-4 text-white"
                     strokeWidth={1.2}
                   />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -56,10 +57,10 @@ export default function HowItWorks() {
                 Optimize storage by structuring extracted data efficiently,
                 reducing costs and improving accessibility.{" "}
               </p>
-              <button className="flex items-center justify-between gap-2 rounded-full border border-solid border-gray-300 px-5 py-2 text-xs font-semibold text-white transition-all duration-500 hover:bg-white/5">
+              <Link href="/blog" className="flex items-center justify-between gap-2 rounded-full border border-solid border-gray-300 px-5 py-2 text-xs font-semibold text-white transition-all duration-500 hover:bg-white/5">
                 View More
                 <ChevronRight className="size-4 text-white" strokeWidth={1.2} />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative h-auto w-full">
@@ -74,10 +75,10 @@ export default function HowItWorks() {
                 Integrate extracted data seamlessly into business systems to
                 enhance accuracy and workflow efficiency.{" "}
               </p>
-              <button className="flex items-center justify-between gap-2 rounded-full border border-solid border-gray-300 px-5 py-2 text-xs font-semibold text-white transition-all duration-500 hover:bg-white/5">
+              <Link href="/blog" className="flex items-center justify-between gap-2 rounded-full border border-solid border-gray-300 px-5 py-2 text-xs font-semibold text-white transition-all duration-500 hover:bg-white/5">
                 View More
                 <ChevronRight className="size-4 text-white" strokeWidth={1.2} />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

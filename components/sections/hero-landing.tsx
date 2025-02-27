@@ -1,9 +1,8 @@
 import Link from "next/link";
 
-import { env } from "@/env.mjs";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export default async function HeroLanding() {
   return (

@@ -11,7 +11,7 @@ export default function AboutUsPage() {
           <h1 className="data-dark:text-white text-pretty text-4xl font-medium tracking-tighter text-gray-950 sm:text-6xl">
             Helping companies generate revenue.
           </h1>
-          <p className="mt-6 max-w-3xl text-2xl font-medium text-gray-500">
+          <p className="max-w-xl text-balance leading-normal text-muted-foreground dark:text-white sm:text-xl sm:leading-8 mt-6">
             We’re on a mission to transform revenue organizations by harnessing
             vast amounts of illegally acquired customer data.
           </p>
@@ -112,7 +112,7 @@ export default function AboutUsPage() {
           <h3 className="data-dark:text-white mt-2 text-pretty text-4xl font-medium tracking-tighter text-gray-950 sm:text-6xl">
             Founded by an all-star team.
           </h3>
-          <p className="mt-6 max-w-3xl text-2xl font-medium text-gray-500">
+          <p className="mt-6 max-w-xl text-balance leading-normal text-muted-foreground dark:text-white sm:text-xl sm:leading-8">
             Radiant is founded by two of the best sellers in the business and
             backed by investors who look the other way.
           </p>

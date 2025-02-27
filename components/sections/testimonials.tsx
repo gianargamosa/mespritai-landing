@@ -1,7 +1,6 @@
-import Image from "next/image";
 
-import { testimonials } from "@/config/landing";
 import { HeaderSection } from "@/components/shared/header-section";
+import { testimonials } from "@/config/landing";
 
 export default function Testimonials() {
   return (
@@ -20,7 +19,7 @@ export default function Testimonials() {
               <div className="relative rounded-xl border bg-muted/25">
                 <div className="flex flex-col px-4 py-5 sm:p-6">
                   <div>
-                    <div className="relative mb-4 flex items-center gap-3">
+                    {/* <div className="relative mb-4 flex items-center gap-3">
                       <span className="relative inline-flex size-10 shrink-0 items-center justify-center rounded-full text-base">
                         <Image
                           width={100}
@@ -38,7 +37,7 @@ export default function Testimonials() {
                           {item.job}
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                     <q className="text-muted-foreground">{item.review}</q>
                   </div>
                 </div>
