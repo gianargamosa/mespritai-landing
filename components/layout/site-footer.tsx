@@ -1,6 +1,6 @@
-import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import * as React from "react";
 
 import { footerLinks } from "@/config/landing";
 
@@ -40,7 +40,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           <div className="mb-14 flex items-center justify-center space-x-10">
             <a
               href="#"
-              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
+              className="block text-gray-900 transition-all duration-500 hover:text-gray-800"
             >
               <svg
                 className="size-6 dark:text-white"
@@ -56,7 +56,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             <a
               href="#"
-              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
+              className="block text-gray-900 transition-all duration-500 hover:text-pink-600"
             >
               <svg
                 className="size-6 dark:text-white"
@@ -88,7 +88,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             </a>
             <a
               href="#"
-              className="block text-gray-900 transition-all duration-500 hover:text-indigo-600"
+              className="block text-gray-900 transition-all duration-500 hover:text-red-600"
             >
               <svg
                 className="size-6 dark:text-white"
