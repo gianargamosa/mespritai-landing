@@ -5,41 +5,29 @@ export const appLink = env.NEXT_PUBLIC_MESPIRT_APP_URL;
 
 export const faqs = [
   {
-    title: "What is Automated Data Extraction for Documents?",
+    title: "What is Legal Document Data Extraction?",
     description:
-      "Automated Data Extraction uses AI and advanced LLMs to instantly identify, extract, and organize key information from documents, eliminating manual data entry and improving efficiency.",
+      "Legal Document Data Extraction is a process where our AI analyzes and extracts key information from legal documents such as contracts, agreements, and case files. This automated system organizes the extracted data, streamlining workflows, reducing manual effort, and ensuring accuracy in document management.",
   },
   {
     title: "How much does it cost?",
     description:
-      "Pricing depends on usage, document volume, and integration needs. We offer flexible plans, including pay-as-you-go and enterprise solutions. Contact us for a custom quote!",
+      "Our pricing is flexible and depends on your needs and the volume of documents you handle. We offer various subscription plans to accommodate different use cases. Please contact our sales team for a personalized quote.",
   },
   {
     title: "Who is it for?",
     description:
-      "Our solution is designed for professionals and teams handling large volumes of documents, including:",
-    list: [
-      "Finance Teams – Automate invoice processing, expense tracking, and compliance reporting.",
-      "Legal Professionals – Extract clauses, case details, and contracts quickly and accurately.",
-      "Research Teams & Scientists – Speed up data collection from research papers, clinical studies, and reports.",
-      "Enterprises & Businesses – Streamline document-heavy workflows in HR, procurement, and operations.",
-      "Healthcare Organizations – Digitize and extract key data from patient records, insurance claims, and medical research.",
-      "Government Agencies – Process official records, legal documents, and regulatory reports with speed and accuracy.",
-    ],
+      "Our Legal AI Assistant is designed for law firms, in-house legal teams, legal researchers, and anyone involved in managing large volumes of legal documents. It’s perfect for professionals looking to streamline document review, data extraction, and legal research processes.",
   },
   {
     title: "What problems does it solve?",
-    list: [
-      "Saves Time – Eliminates tedious manual data entry, reducing processing time.",
-      "Improves Accuracy – AI minimizes human errors in data extraction.",
-      "Organizes Data Efficiently – Converts unstructured documents into structured, searchable formats.",
-      "Seamless Integration – Works with your existing ERP, CRM, and databases for smooth workflows.",
-    ],
+    description:
+      "Our AI tool helps solve several challenges, including reducing manual effort in document review, minimizing human error in data extraction, accelerating decision-making, and improving the overall efficiency of legal workflows. It also helps to cut down operational costs by automating time-consuming tasks.",
   },
   {
     title: "How do I get started?",
     description:
-      "Simply upload your documents, and our AI will do the rest! Contact us for a demo or sign up to see it in action.",
+      "Getting started is simple! Just sign up for an account on our website, upload your legal documents, and let our AI do the rest. You’ll be able to extract, organize, and integrate key data with just a few clicks. Our support team is available to assist you during setup if needed.",
   },
 ];
 
@@ -68,33 +56,33 @@ export const footerLinks = [
 
 export const infos: InfoLdg[] = [
   {
-    title: "Unlock Insights, Drive Success.",
+    title: "Unlock Legal Insights, Drive Smarter Success",
     description:
-      "Effective document analysis is the key to smarter business decisions, streamlined operations, and risk management. By analyzing documents, companies can enhance compliance, boost efficiency, and preserve valuable knowledge—ensuring long-term success in a data-driven world.",
+      "Effective document analysis is the cornerstone of intelligent legal decision-making, streamlined operations, and robust risk management. With advanced legal assistance, law firms and businesses can enhance compliance, increase efficiency, and safeguard critical knowledge—ensuring long-term success in an increasingly data-driven world.",
     image: "/_static/illustrations/work-from-home.jpg",
     list: [
       {
         title: "Improves Decision-Making",
         description:
-          "Analyzing documents ensures that business decisions are based on accurate, well-organized information rather than assumptions.",
+          "Smart legal assistance ensures that decisions are based on accurate, well-organized legal information, not assumptions or outdated data.",
         icon: "lightbulb",
       },
       {
         title: "Boosts Operational Efficiency",
         description:
-          "Reviewing and analyzing documents helps streamline workflows, reduce redundancies, and improve overall productivity.",
+          "Automated document review and analysis streamline workflows, eliminate redundancies, and significantly improve productivity in legal processes.",
         icon: "boost",
       },
       {
         title: "Enhances Compliance and Risk Management",
         description:
-          "Proper document analysis helps companies stay compliant with industry regulations and identify potential risks before they escalate.",
+          "Effective legal document analysis helps organizations stay compliant with regulations and proactively identify potential legal risks before they escalate.",
         icon: "cloudAlert",
       },
       {
         title: "Supports Knowledge Management",
         description:
-          "Document analysis allows companies to retain valuable insights, ensuring that critical information is accessible for future reference and business continuity.",
+          "Smart legal assistance ensures that critical legal insights are preserved and easily accessible, safeguarding vital information for future reference and continuity.",
         icon: "search",
       },
     ],

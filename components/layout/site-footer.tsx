@@ -105,7 +105,8 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
               </svg>
             </a>
           </div>
-          <span className="block text-center text-muted-foreground dark:text-white">
+          <p className="py-8 text-center text-sm text-muted-foreground">Mesprit AI offers self-help services based on your specific instructions. We are not a law firm and do not act as a substitute for legal counsel. While communications with Mesprit AI are protected by our Privacy Policy, they are not covered by attorney-client privilege or considered work product. We do not provide legal advice, opinions, recommendations, or guidance regarding legal rights, remedies, defenses, form selection, or strategies. Your use of our website is governed by our Terms of Service.</p>
+          <span className="text-sm block text-center text-muted-foreground dark:text-white">
             &copy;<a href="https://pagedone.io/">Mesprit</a> 2024 made in PH,
             All rights reserved.
           </span>

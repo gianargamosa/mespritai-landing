@@ -19,7 +19,7 @@ export default function FaqItem({ title, description, list }: FaqItemProps) {
     <div>
       <div
         onClick={toggleAccordion}
-        className={cn("flex w-full items-center justify-between rounded-md border bg-muted/25 px-4 py-3 text-left font-medium text-muted-foreground transition-colors hover:bg-muted/50 focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75", active && "border-b-0 rounded-b-none")}
+        className={cn("flex w-full cursor-pointer items-center justify-between rounded-md border bg-muted/25 p-4 text-left font-medium text-muted-foreground transition-colors hover:bg-muted/50 focus:outline-none focus-visible:ring focus-visible:ring-primary focus-visible:ring-opacity-75", active && "border-b-0 rounded-b-none")}
       >
         {title}
         <ChevronRight

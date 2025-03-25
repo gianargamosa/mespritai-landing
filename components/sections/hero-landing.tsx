@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export default async function HeroLanding() {
   return (
-    <section className="space-y-6 py-12 sm:py-20 lg:py-20">
+    <section className="space-y-6 py-12 sm:py-20 lg:py-20 z-10">
       <div className="container flex max-w-6xl flex-col items-center gap-5 text-center">
         <div
           aria-hidden="true"
@@ -21,32 +21,29 @@ export default async function HeroLanding() {
           />
         </div>
         <Link
-          href="https://twitter.com/miickasmt/status/1810465801649938857"
+          href="/blog"
           className={cn(
             buttonVariants({ variant: "outline", size: "sm", rounded: "full" }),
             "px-4 text-muted-foreground",
           )}
-          target="_blank"
         >
           <span className="mr-3">🎉</span>
           <span className="hidden md:flex">Introducing&nbsp;</span>{" "}
           <span className="text-gradient_indigo-purple font-bold">
-            Mesprit AI Beta.
+            Your all-in-one AI legal assistant
           </span>
         </Link>
 
         <h1 className="hero-landing-tagline text-balance font-sans text-3xl tracking-tight sm:text-4xl md:text-5xl lg:text-[70px]">
-          Automated Data Extraction for{" "}
-          <span className="text-gradient_indigo-purple">Documents</span>
+          Supercharge Your Legal Practice with{" "}
+          <span className="text-gradient_indigo-purple">Smart Assistance</span>
         </h1>
 
         <p
           className="max-w-xl text-balance leading-normal text-muted-foreground dark:text-white sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
         >
-          Use AI to organize unstructured text and documents. Extract key terms
-          and metadata for better decision-making. Turn your documents into
-          strategic assets with Mesprit!
+          Quickly conduct research, streamline your drafting process, and analyze documents with Mesprit. What tasks do you need to tackle today? Simply ask Mesprit.
         </p>
 
         <div
@@ -57,11 +54,11 @@ export default async function HeroLanding() {
             href="/pricing"
             prefetch={true}
             className={cn(
-              buttonVariants({ size: "lg", rounded: "lg" }),
-              "gap-2",
+              buttonVariants({ variant: "outline", size: "lg", rounded: "full" }),
+              "gap-2 border-2 border-indigo-600 text-indigo-600 font-bold",
             )}
           >
-            <span>Request a demo</span>
+            <span>Try Mesprit for free</span>
             <Icons.arrowRight className="size-4" />
           </Link>
         </div>

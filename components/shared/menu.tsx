@@ -6,51 +6,34 @@ import { useState } from "react";
 const NiceMenu = () => {
   return (
     <motion.div className="mt-4 flex flex-col rounded-lg border border-gray-100 p-1 font-medium text-muted-foreground dark:text-white md:mt-0 md:flex-row md:space-x-8 md:border-0 rtl:space-x-reverse">
-      <MenuItem text={"Products"} style={{ minWidth: 400 }}>
+      <MenuItem text={"Platform"} style={{ minWidth: 400 }}>
         <SubItem
-          title="Skylark"
-          text="Transform documents into structured data."
+          title="Quick-Start Drafting"
           href="/products/skylark"
         />
         <SubItem
-          title="Pocono (coming soon)"
-          text="Workflow-based central contract database."
+          title="Document Analysis"
+          href="/"
+        />
+        <SubItem
+          title="Case Reviews"
+          href="/"
+        />
+        <SubItem
+          title="Contextual Research"
+          href="/"
+        />
+        <SubItem
+          title="Contract Analysis"
           href="/"
         />
       </MenuItem>
-      <MenuItem text={"Use cases"} style={{ minWidth: 400 }}>
-        <SubItem
-          title="Legal Professionals"
-          text="Extract clauses, contracts, and case details."
-          href="/use-cases/skylark"
-        />
-        <SubItem
-          title="Finance Teams"
-          text="Automate invoices, expenses, and compliance."
-          href="/use-cases/ai-powered-document-analysis-transforming-finance-teams"
-        />
-        <SubItem
-          title="Research Teams & Scientists"
-          text="Speed up data collection from studies."
-          href="/use-cases/skylark"
-        />
-        <SubItem
-          title="Healthcare Organizations"
-          text="Digitize records, claims, and reports."
-          href="/use-cases/skylark"
-        />
-        <SubItem
-          title="Government Agencies"
-          text="Process official documents efficiently."
-          href="/use-cases/skylark"
-        />
-        <SubItem
-          title="Enterprises & Businesses"
-          text="Streamline HR and operations workflows."
-          href="/use-cases/skylark"
-        />
-      </MenuItem>
       <MenuItem text={"Resources"} style={{ minWidth: 400 }}>
+        <SubItem
+          title="About Us"
+          text="Read the latest articles and thought leadership"
+          href="/blog"
+        />
         <SubItem
           title="Blog"
           text="Read the latest articles and thought leadership"
@@ -62,23 +45,7 @@ const NiceMenu = () => {
           href="/blog/category/news"
         />
       </MenuItem>
-      <MenuItem text={"About us"} style={{ minWidth: 400 }}>
-        <SubItem
-          title="The Team"
-          text="Get to know us better"
-          href="/about-us"
-        />
-        <SubItem
-          title="The Company"
-          text="Since 2024"
-          href="/about-us"
-        />
-        <SubItem
-          title="Careers"
-          text="Explore opportunity with Mesprit"
-          href="/about-us"
-        />
-      </MenuItem>
+      <MenuItem text={"Pricing"} style={{ minWidth: 400 }} children={undefined} />
     </motion.div>
   );
 };
@@ -102,8 +69,8 @@ const MenuItem = ({ text, children, ...props }) => {
       onHoverStart={() => setIsBeingHovered(true)}
       onHoverEnd={() => setIsBeingHovered(false)}
     >
-      <span className="text-balance text-base hover:underline">{text}</span>
-      {isBeingHovered && (
+      <span className="text-balance text-zinc-700 text-base hover:underline">{text}</span>
+      {isBeingHovered && children && (
         <div className="min-w-max">
           <motion.div
             {...props}
@@ -135,7 +102,7 @@ const SubItemVariants = {
 
 interface SubItemProps {
   title: string;
-  text: string;
+  text?: string;
   href: string;
 }
 
@@ -146,15 +113,17 @@ const SubItem = ({ title, text, href }: SubItemProps) => {
       layout
       variants={SubItemVariants}
     >
-      <div className="flex items-center gap-4 space-y-4">
+      <div className="inline-flex items-center gap-4">
         <Hashicon value={title} size={25} />
-        <Link href={href}>
+        <Link href={href} className="py-2">
           <p className="text-base font-semibold text-black group-hover:text-blue-900 dark:text-white">
             {title}
           </p>
-          <span className="text-sm text-gray-400 group-hover:text-blue-400">
-            {text}
-          </span>
+          {text && (
+            <span className="text-sm text-gray-400 group-hover:text-blue-400">
+              {text}
+            </span>
+          )}
         </Link>
       </div>
     </motion.div>

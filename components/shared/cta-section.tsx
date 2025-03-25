@@ -1,6 +1,6 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 import { env } from "@/env.mjs";
 
@@ -32,13 +32,10 @@ export default function CtaSection() {
           </svg>
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-balance font-heading text-3xl leading-6 text-black dark:text-white sm:text-4xl md:text-4xl lg:text-[40px]">
-              Optimize Your Business with Smart Document Analysis!
+              Ready to maximize your potential, improve client outcomes, and accelerate business growth?
             </h2>
             <p className="mt-6 text-pretty text-lg/8 text-muted-foreground">
-              Don’t let valuable insights go unnoticed. Enhance decision-making,
-              improve compliance, and boost efficiency with effective document
-              analysis. Take the next step toward smarter business operations
-              today!
+              Get started with Mesprit today—enjoy a free trial with no interviews, contracts, or salary negotiations, plus transparent pricing from day one.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <Link
